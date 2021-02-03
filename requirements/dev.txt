@@ -1,0 +1,6 @@
+click==7.1.2
+coverage==5.3.1
+pathspec==0.8.1
+PyYAML==5.3.1
+yamllint==1.25.0
+-r requirements.txt
