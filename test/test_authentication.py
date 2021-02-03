@@ -10,7 +10,7 @@ class TestSpotifyAuthentication(unittest.TestCase):
 
     @mock.patch.dict(environ, {"CLIENT_ID": "MY_CLIENT_ID"}, {"CLIENT_SECRET": "MY_CLIENT_SECRET"})
     @mock.patch('src.app.os')
-    def test_returns_a_token(self, mock_os):
+    def test_checks_if_os_get_environ_was_called_twice_with_different_arguments(self, mock_os):
         calls = [call("CLIENT_ID"), call("CLIENT_SECRET")]
         token = SpotifyToken()
 
